@@ -1,4 +1,4 @@
 - hosts: localhost
   tasks:
   - debug:
-      msg: "testing github action workflow"
+      msg: "testing github action workflow from dev branch"
