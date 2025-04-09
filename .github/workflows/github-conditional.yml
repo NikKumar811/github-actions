@@ -19,6 +19,7 @@ jobs:
            echo "not-docs=true" >> $GITHUB_ENV
         else
            echo "not-docs=false" >> $GITHUB_ENV
+        fi
 
     - name: run test
       if: env.not-docs == 'true' && contains(github.event.pull_request.labels.*.name, 'run-tests')
